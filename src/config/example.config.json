@@ -1,0 +1,19 @@
+{
+	"sqs": {
+		"queueUrl": "",
+		"accessKeyId": "",
+		"secretAccessKey": "",
+		"region": "eu-central-1",
+		"apiVersion": "2012-11-05"
+	},
+	"facebook": {
+		"accessToken": "",
+		"pageId": ""
+	},
+	"twitter": {
+		"consumerKey": "",
+		"consumerSecret": "",
+		"accessToken": "",
+		"accessTokenSecret": ""
+	}
+}

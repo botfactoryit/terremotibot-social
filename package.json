@@ -1,0 +1,26 @@
+{
+  "name": "terremotibot-social",
+  "version": "1.0.0",
+  "description": "Automatic earthquakes poster to Twitter and Facebook",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "repository": "botfactoryit/terremotibot-social",
+  "author": "Matteo Contrini <m.contrini@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/botfactoryit/terremotibot-social/issues"
+  },
+  "homepage": "https://github.com/botfactoryit/terremotibot-social#readme",
+  "dependencies": {
+    "aws-sdk": "^2.11.0",
+    "bole": "^3.0.2",
+    "fb": "^1.1.1",
+    "sqs-consumer": "^3.4.0",
+    "twit": "^2.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0"
+  }
+}
