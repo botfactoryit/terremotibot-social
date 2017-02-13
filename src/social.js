@@ -32,7 +32,7 @@ function handleMessage(message, done) {
 	let date = new Date(body['date']);
 	let time = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
 	
-	let magnitude = body['magnitude']['value'];
+	let magnitude = body['magnitude']['value'].toFixed(1);
 	let uncertainty = body['magnitude']['uncertainty'];
 	let type = body['magnitude']['type'];
 	let city = body['city'];
