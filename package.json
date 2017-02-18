@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src",
+    "lint": "eslint lib",
     "release-patch": "release-it patch",
     "release": "release-it minor",
     "release-minor": "release-it minor"
