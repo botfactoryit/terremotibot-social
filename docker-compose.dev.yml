@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  bot:
+    build: .
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./test/config.json:/src/lib/config/config.json
