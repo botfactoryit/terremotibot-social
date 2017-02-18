@@ -15,4 +15,4 @@ process.on('uncaughtException', (err) => {
 	process.exit(1);
 });
 
-require('./src/social.js');
+require('./lib/social.js');
