@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/botfactoryit/terremotibot-social#readme",
   "dependencies": {
+    "async": "^2.1.5",
     "aws-sdk": "^2.11.0",
     "bole": "^3.0.2",
     "fb": "^1.1.1",
