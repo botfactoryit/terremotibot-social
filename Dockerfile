@@ -1,24 +1,15 @@
-FROM alpine:3.5
+FROM node:6.11.2-alpine
 MAINTAINER Francesco Tonini <francescoantoniotonini@gmail.com>
-ENV REFRESHED_AT 2017-02-18
+ENV REFRESHED_AT 2017-09-04
 
-# Install nodejs
-RUN apk add --update nodejs=6.9.2-r1
-
-# Cleanup
-RUN rm -rf /var/lib/apt/lists/*
-
-# Install app dependencies
-COPY package.json /src/package.json
-RUN npm set loglevel info
-RUN cd /src; npm install --production
-
-# Copy app bundle
-COPY ./lib /src/lib
-COPY ./index.js /src
+COPY . src/
+RUN echo "Move to /src and install app dependencies"  \
+	&& cd /src \
+	&& npm install --production \
+	&& echo "Done :)"
 
 # Set envs
 ENV NODE_ENV=production
 
-# Start
+# Here we go
 CMD ["node", "/src/index.js"]
