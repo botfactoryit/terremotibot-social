@@ -4,6 +4,10 @@ Integration for [TerremotiBot](https://github.com/botfactoryit/terremotibot).
 
 Receives earthquakes details and image cards through [Amazon SQS](https://aws.amazon.com/sqs/) for every 'big' earthquake, and publishes text and image to Twitter and Facebook.
 
+## ❌ DEPRECATED
+
+This integration has been embedded in the main [TerremotiBot](https://github.com/botfactoryit/terremotibot) repository.
+
 ## How to run
 
 ```js
